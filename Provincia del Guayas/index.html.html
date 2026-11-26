@@ -1,0 +1,513 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guayas | Cultura, tradición e identidad</title>
+<meta name="description" content="Portal cultural digital de la provincia del Guayas, Ecuador.">
+<style>
+:root{
+--ink:#20352c;
+--green:#234c3b;
+--gold:#d49a42;
+--cream:#f7f3e9;
+--rust:#b65d3c;
+--muted:#6c756d
+}
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--ink);
+background:var(--cream);
+line-height:1.65
+}
+
+header{
+background:linear-gradient(135deg,#1e4937,#3e7153);
+color:white;
+padding:1rem 6vw;
+position:sticky;
+top:0;
+z-index:5;
+box-shadow:0 3px 14px #0002
+}
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:1rem;
+flex-wrap:wrap
+}
+.brand{
+font-weight:800;
+letter-spacing:.04em
+}
+
+.navlinks{
+display:flex;
+gap:.8rem;
+flex-wrap:wrap
+}
+
+.navlinks a{
+color:white;
+text-decoration:none;
+font-size:.93rem;
+padding:.35rem .6rem;
+border-radius:20px
+}
+
+.navlinks a:hover{
+background:#ffffff22
+}
+
+.hero{
+min-height:440px;
+display:flex;
+align-items:center;
+padding:4rem 7vw;
+color:white;
+background:linear-gradient(90deg,#173b30dd,#173b3060),
+url('https://goecuador.net/provincia/guayas-ecuador') center/cover
+}
+
+.hero-inner{max-width:750px}
+
+.eyebrow{
+text-transform:uppercase;
+letter-spacing:.14em;
+color:#f2c777;
+font-size:.85rem;
+font-weight:bold
+}
+
+.hero h1{
+font-size:clamp(2.4rem,6vw,4.6rem);
+line-height:1.05;
+margin:.5rem 0
+}
+
+.hero p{
+font-size:1.15rem;
+max-width:650px
+}
+
+.btn{
+display:inline-block;
+background:var(--gold);
+color:#1c3328;
+text-decoration:none;
+font-weight:bold;
+padding:.8rem 1.15rem;
+border-radius:30px;
+margin-top:.7rem
+}
+
+main{
+max-width:1160px;
+margin:auto;
+padding:2rem 5vw 4rem
+}
+
+section{
+padding:2.4rem 0;
+scroll-margin-top:100px
+}
+
+.section-title{
+font-size:2rem;
+margin:0 0 .4rem;
+color:var(--green)
+}
+
+.intro{
+color:var(--muted);
+max-width:780px
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:1.2rem
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 18px #173b3010;
+border:1px solid #e9e3d5
+}
+
+.card img{
+width:100%;
+height:210px;
+object-fit:cover
+}
+
+.card-content{
+padding:1rem 1.2rem
+}
+
+.card h3{
+margin:.2rem 0;
+color:var(--green)
+}
+
+.pill{
+display:inline-block;
+background:#e7efdf;
+color:#31583d;
+border-radius:20px;
+padding:.2rem .7rem;
+font-size:.8rem;
+font-weight:bold
+}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:1.5rem;
+align-items:center
+}
+
+.split img{
+width:100%;
+border-radius:18px;
+max-height:420px;
+object-fit:cover
+}
+
+.panel{
+background:#e7eadc;
+padding:1.3rem 1.5rem;
+border-radius:18px
+}
+
+.list{padding-left:1.2rem}
+
+.food{
+background:#e9dfc9;
+border-radius:20px;
+padding:1.5rem
+}
+
+.mapframe{
+border:0;
+width:100%;
+height:380px;
+border-radius:18px
+}
+
+footer{
+background:#193d30;
+color:white;
+text-align:center;
+padding:2rem 5vw
+}
+
+footer a{color:#f2c777}
+
+a{color:#285d45}
+
+html{scroll-behavior:smooth}
+
+@media(max-width:700px){
+.split{grid-template-columns:1fr}
+.hero{min-height:380px;padding:3rem 6vw}
+.navlinks{gap:.3rem}
+.navlinks a{font-size:.82rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="nav">
+<div class="brand">🌿 GUAYAS CULTURAL</div>
+<div class="navlinks">
+<a href="#identidad">Identidad</a>
+<a href="#juegos">Juegos</a>
+<a href="#leyendas">Leyendas</a>
+<a href="#fiestas">Fiestas</a>
+<a href="#gastronomia">Gastronomía</a>
+<a href="#desarrollo">Desarrollo</a>
+<a href="#mapa">Mapa</a>
+</div>
+</nav>
+</header>
+
+<div class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Portal cultural digital</div>
+<h1>Guayas: cultura, tradición e identidad</h1>
+<p>Un recorrido por las costumbres, relatos, celebraciones, sabores y patrimonio que forman parte de la identidad de nuestra provincia.</p>
+<a class="btn" href="#identidad">Explorar el portal ↓</a>
+</div>
+</div>
+
+<main>
+
+<section id="identidad">
+<div class="split">
+<div>
+<span class="pill">Nuestras raíces</span>
+<h2 class="section-title">Identidad cultural</h2>
+<p>La provincia del Guayas posee una cultura diversa que se refleja en sus tradiciones, gastronomía, música, fiestas, actividades agrícolas y formas de vida. La cultura montubia es una de sus expresiones representativas, vinculada a la vida rural, los amorfinos, el rodeo, la vestimenta y los conocimientos del campo.</p>
+<p>Estas manifestaciones forman parte de la memoria colectiva y ayudan a fortalecer el sentido de pertenencia. Conocerlas y compartirlas contribuye a mantener vivas las tradiciones entre generaciones.</p>
+</div>
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images.jpg" alt="Paisaje rural">
+</div>
+</section>
+
+<section id="juegos">
+<h2 class="section-title">Juegos tradicionales</h2>
+<p class="intro">Juegos populares que reúnen a las familias y comunidades y transmiten experiencias de una generación a otra. No todos son exclusivos del Guayas, pero forman parte de la tradición popular ecuatoriana.</p>
+
+<div class="cards">
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (1).jpg" alt="Rayuela">
+<div class="card-content">
+<h3>Rayuela</h3>
+<p><b>Origen:</b> juego popular antiguo difundido en distintos países y adaptado a las comunidades.</p>
+<p><b>Reglas:</b> se dibujan casillas, se lanza una ficha y se avanza saltando, evitando las casillas señaladas.</p>
+<p><b>Importancia:</b> desarrolla equilibrio, coordinación y convivencia.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (2).jpg" alt="Trompo">
+<div class="card-content">
+<h3>El trompo</h3>
+<p><b>Origen:</b> juego tradicional difundido en diversas culturas y comunidades latinoamericanas.</p>
+<p><b>Reglas:</b> se enrolla la cuerda y se lanza para hacerlo girar; se pueden realizar desafíos de destreza.</p>
+<p><b>Importancia:</b> ejercita habilidades motoras y mantiene una tradición popular.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (3).jpg" alt="Carrera">
+<div class="card-content">
+<h3>Carrera de ensacados</h3>
+<p><b>Origen:</b> actividad popular en celebraciones escolares, barriales y comunitarias.</p>
+<p><b>Reglas:</b> los participantes saltan dentro de sacos hasta llegar a la meta.</p>
+<p><b>Importancia:</b> fomenta actividad física, diversión y participación.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\TIO6NP6NZVA23MS4ILDBVA33LA.jpg" alt="Fiesta popular">
+<div class="card-content">
+<h3>Palo encebado</h3>
+<p><b>Origen:</b> juego presente en fiestas populares de diferentes regiones.</p>
+<p><b>Reglas:</b> se intenta subir a un palo resbaladizo para alcanzar premios colocados arriba.</p>
+<p><b>Importancia:</b> impulsa la diversión, la cooperación y el sentido comunitario.</p>
+</div>
+</div>
+
+</div>
+
+<div class="panel" style="margin-top:1rem">
+<b>¿Por qué conservarlos?</b> Porque son parte de la memoria cultural, permiten compartir entre generaciones y fortalecen la convivencia.
+</div>
+</section>
+
+<section id="leyendas">
+<h2 class="section-title">Cuentos y leyendas</h2>
+<p class="intro">Relatos que conservan creencias, enseñanzas e imaginación popular. Las versiones pueden variar de una localidad a otra.</p>
+
+<div class="cards">
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\6a501e49385fb.jpg" alt="Dama Tapada">
+<div class="card-content">
+<h3>La Dama Tapada</h3>
+<p><b>Origen:</b> relato popular asociado a las calles de Guayaquil y a narraciones nocturnas.</p>
+<p><b>Significado:</b> representa el misterio y las creencias de la tradición oral.</p>
+<p><b>Mensaje:</b> invita a la prudencia y a no dejarse llevar por las apariencias.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (4).jpg" alt="Tintin">
+<div class="card-content">
+<h3>El Tintín</h3>
+<p><b>Origen:</b> personaje de relatos de la Costa ecuatoriana, vinculado a creencias rurales.</p>
+<p><b>Significado:</b> refleja el imaginario popular y las creencias transmitidas oralmente.</p>
+<p><b>Mensaje:</b> permite conocer las narraciones y costumbres de las comunidades.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\lloro.jpg" alt="la Llorona">
+<div class="card-content">
+<h3>La Llorona</h3>
+<p><b>Origen:</b> leyenda presente en varios países latinoamericanos y en distintas versiones ecuatorianas.</p>
+<p><b>Significado:</b> evoca misterio, dolor y relatos sobrenaturales.</p>
+<p><b>Mensaje:</b> sus versiones transmiten advertencias y reflexiones morales.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="fiestas">
+<h2 class="section-title">Fiestas y patrimonio</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (5).jpg" alt="9 de Octubre">
+<div class="card-content">
+<h3>9 de Octubre</h3>
+<p>Conmemora la independencia de Guayaquil, ocurrida en 1820. Se realizan actos cívicos, desfiles y eventos culturales.</p>
+</div>
+</div>
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (6).jpg" alt="25 de Julio">
+<div class="card-content">
+<h3>25 de Julio</h3>
+<p>Fecha conmemorativa relacionada con la fundación de Santiago de Guayaquil, celebrada con eventos y actividades culturales.</p>
+</div>
+</div>
+<div class="card">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (7).jpg" alt="Rodeo montubio">
+<div class="card-content">
+<h3>Rodeo montubio</h3>
+<p>Celebración que reúne destrezas ecuestres, vestimenta, música, amorfinos y tradiciones de la cultura montubia.</p>
+</div>
+</div>
+</div>
+<div class="split" style="margin-top:1.5rem">
+<div class="panel">
+<h3>Patrimonio material</h3>
+<ul>
+<li>Las Peñas, barrio histórico.</li>
+<li>Torre Morisca o Torre del Reloj.</li>
+<li>Catedral de Guayaquil.</li>
+<li>Museos y espacios históricos.</li>
+</ul>
+</div>
+<div class="panel">
+<h3>Patrimonio inmaterial</h3>
+<ul>
+<li>Amorfinos y tradición oral.</li>
+<li>Rodeo montubio.</li>
+<li>Gastronomía.</li>
+<li>Música, danza y fiestas.</li>
+<li>Conocimientos tradicionales.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="gastronomia">
+<div class="split">
+<div>
+<h2 class="section-title">Gastronomía</h2>
+<p>Los sabores del Guayas forman parte de la identidad local. Sus platos reúnen ingredientes regionales, conocimientos familiares y tradiciones culinarias.</p>
+<ul class="list">
+<li>Encebollado</li>
+<li>Bolón de verde</li>
+<li>Arroz con menestra y carne</li>
+<li>Cangrejo criollo</li>
+<li>Ceviches</li>
+</ul>
+<p>La gastronomía también impulsa el turismo y genera oportunidades para restaurantes, mercados, productores y emprendimientos.</p>
+</div>
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\R5XE3KANFJAG7KU2VRTQBAE27U.jpg" alt="Comida">
+</div>
+</section>
+<section id="desarrollo">
+<h2 class="section-title">Cultura y desarrollo local</h2>
+<div class="cards">
+<div class="card-content panel">
+<h3>Economía</h3>
+<p>Genera oportunidades para artesanos, comerciantes, artistas, cocineros y pequeños negocios.</p>
+</div>
+<div class="card-content panel">
+<h3>Educación</h3>
+<p>Permite aprender sobre historia, tradiciones e identidad y usar el portal como recurso educativo.</p>
+</div>
+<div class="card-content panel">
+<h3>Turismo</h3>
+<p>Promueve visitas a espacios históricos, fiestas, rodeos, museos y experiencias gastronómicas.</p>
+</div>
+<div class="card-content panel">
+<h3>Territorio</h3>
+<p>Las tradiciones se relacionan con el entorno, las actividades y las formas de vida de cada cantón.</p>
+</div>
+<div class="card-content panel">
+<h3>Identidad</h3>
+<p>Fortalece el sentido de pertenencia y el reconocimiento de las raíces culturales.</p>
+</div>
+</div>
+</section>
+<section id="gobernanza">
+<h2 class="section-title">Gobernanza y patrimonio</h2>
+<div class="split">
+<img src="C:\Users\PC-RYZEN7\OneDrive\Escritorio\UNIVERSIDAD\images (8).jpg" alt="Comunidad reunida">
+<div>
+<p>Conservar la cultura es una responsabilidad compartida entre ciudadanía, comunidades, instituciones educativas, autoridades y organizaciones.</p>
+<ul>
+<li><b>Participación:</b> involucrarse en actividades, talleres y proyectos culturales.</li>
+<li><b>Conservación:</b> proteger tradiciones, espacios y saberes.</li>
+<li><b>Igualdad:</b> reconocer la diversidad y dar visibilidad a diferentes grupos y expresiones.</li>
+<li><b>Comunicación:</b> compartir información mediante medios digitales y actividades públicas.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="mapa">
+<h2 class="section-title">Mapa cultural de referencia</h2>
+<p class="intro">Explora algunos lugares del Guayas y relaciona sus cantones con tradiciones, gastronomía, celebraciones y patrimonio.</p>
+<iframe class="mapframe" loading="lazy" src="https://www.google.com/maps?q=Guayas%2C%20Ecuador&output=embed" title="Mapa de Guayas"></iframe>
+<div class="cards" style="margin-top:1rem">
+<div class="panel">
+<h3>Guayaquil</h3>
+<p>Historia urbana, fiestas cívicas, patrimonio, gastronomía y leyendas.</p>
+</div>
+<div class="panel">
+<h3>Nobol</h3>
+<p>Tradición religiosa y peregrinaciones relacionadas con Narcisa de Jesús.</p>
+</div>
+<div class="panel">
+<h3>Salitre</h3>
+<p>Tradiciones montubias, rodeo y cultura rural.</p>
+</div>
+<div class="panel">
+<h3>Daule</h3>
+<p>Tradiciones rurales, gastronomía y actividades agrícolas.</p>
+</div>
+<div class="panel">
+<h3>Naranjal</h3>
+<p>Tradiciones locales, gastronomía y celebraciones.</p>
+</div>
+<div class="panel">
+<h3>Balzar</h3>
+<p>Vida rural y manifestaciones de la cultura montubia.</p>
+</div>
+</div>
+</section>
+<section id="fuentes">
+<h2 class="section-title">Fuentes y créditos</h2>
+<ul>
+<li>Casa de la Cultura Ecuatoriana – información sobre el pueblo montubio.</li>
+<li>Instituto Nacional de Patrimonio Cultural – información sobre patrimonio y rodeo montubio.</li>
+<li>Ministerio de Turismo del Ecuador – tradiciones y turismo cultural.</li>
+<li>Prefectura del Guayas – planificación y territorio provincial.</li>
+</ul>
+</section>
+</main>
+<footer>
+<b>Guayas: cultura, tradición e identidad</b>
+<p>Un proyecto para conocer, valorar y preservar nuestras raíces.</p>
+<p>Portal Cultural Digital – Proyecto educativo</p>
+</footer>
+
+</body>
+</html>
